@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI';
+  flex: 0 0 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+.entityWrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.entity {
+  display: flex;
+  height: min(80%, 200px);
+  aspect-ratio: 1;
+  background-color: gray;
+  border: 4px solid rgb(100,100,100);
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 100%;
+}
+
+.timer {
+  font-weight: bold;
+  font-family: monospace;
+  color: white;
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset {
+  width: 100%;
+  flex-grow: 0;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.resetButton {
+  display: flex;
+  margin: 10px auto;
+}
+
+.startButton, .stopButton, .hideButton {
+  height: 25%;
+  aspect-ratio: 1;
+  margin: auto auto;
+  margin-bottom: 5px;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.hidden {
+  background: transparent;
+  border: none;
+  cursor: default;
+}
+
+.hidden .startButton, .hidden .stopButton{
+  display: none;
+}
+
+.hidden .hideButton {
+  border: 2px dotted rgb(100,100,100);
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  border-top: 2px dashed rgb(100,100,100);
+  flex-direction: column;
+}
+
+.resultTitle {
+  width: 100%;
+  text-align: center;
+  color: rgb(30,30,30);
+  font-size: 1.8rem;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.resultList {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  overflow-y: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.average {
+  text-align: center;
+  margin: auto auto;
+}
+
+h3 {
+  text-align: center;
+}
